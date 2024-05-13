@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
@@ -18,8 +21,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skillset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/experience.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css">
     <title>Ramiro Ruiz Murillo | Portfolio</title>
 </head>
+
 <body>
     <header>
         <img src="assets/img/logos/large.png" alt="logo large" class="circle">
@@ -106,7 +111,7 @@
             <h3>Experience</h3>
             <hr>
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="assets/img/experience/1.svg" alt="">
                     <h4>Job 1</h4>
                 </a>
@@ -154,7 +159,18 @@
     <footer>
         <small>Developed and designed by Ramiro Ruiz Murillo. ©2024. All rights reserved.</small>
     </footer>
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+
+            Mi primer trabajo
+
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/fixed.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
+
 </html>
